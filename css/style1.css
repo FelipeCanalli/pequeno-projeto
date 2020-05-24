@@ -1,10 +1,30 @@
 /* Header */
-
 .nav-extended {
   z-index: 1;
   position: fixed;
 }
-
 #teste {
   margin: 100px;
+}
+
+/* Footer */
+#footer ul li img {
+  width: 100px;
+  height: 100px;
+}
+
+#contato-footer li {
+  padding: 10px 0px !important ;
+}
+#contato-footer li i {
+  margin-right: 10px !important ;
+}
+
+#links-footer ul li {
+  padding-bottom: 10px;
+}
+
+#links-footer ul li a:hover {
+  transition: ease 0.4s;
+  color: rgb(73, 114, 146) !important;
 }
