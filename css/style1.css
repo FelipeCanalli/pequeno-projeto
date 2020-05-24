@@ -28,3 +28,32 @@
   transition: ease 0.4s;
   color: rgb(73, 114, 146) !important;
 }
+
+#imagem-footer{
+  padding: 70px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: -10px;
+}
+
+#imagem-footer:hover .texto{
+  opacity:1;
+  transition: ease 1s ;
+}
+
+.texto{
+padding: 20px;
+  text-align:center;
+  opacity:0;
+  transition: opacity .2s linear;
+  background-color:rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.texto a{
+  font-family:'arial';
+  text-decoration: none;
+  color: white;
+  font-size: 15pt;
+}
