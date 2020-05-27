@@ -3,6 +3,11 @@
   z-index: 1;
   position: fixed;
 }
+
+.espaco{
+padding-top:100px;
+}
+
 #teste {
   margin: 100px;
 }
@@ -236,10 +241,10 @@ th {
   display: flex;
 }
 
-/* =======================================FIM DE UMA PÀGINA=============================== */
+/* =======================================FIM DE UMA PÁGINA=============================== */
 
-/* ================================INICIO Da PAGINA PACOTES=============================== */
-/* Inicio do css da pagina 2 */
+/* ================================INICIO Da PÁGINA PACOTES=============================== */
+/* Inicio do css da página 2 */
 /* css da imagem */
 .painel {
   width: 334px;
