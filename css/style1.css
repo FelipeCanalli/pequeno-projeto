@@ -6,6 +6,50 @@
 #teste {
   margin: 100px;
 }
+/* ======================= */
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+  color: #ebb201;
+  display: block;
+  font-size: 30px;
+  height: 0px !important;
+  line-height: 17px !important;
+  margin-left: 0px !important;
+  margin-right: -20px !important;
+}
+/* ==============Inicio do css do botão do pacote ============ */
+.dropdown-content li {
+  clear: both;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  min-height: 50px;
+  line-height: 1.5rem;
+  width: 100%;
+  text-align: left;
+  color: #ebb201 !important;
+
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+/* bloco de letra do botão */
+.dropdown-content li a {
+  text-align: center;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  color: #ebb201 !important;
+}
+/* bloco do botão */
+.dropdown-content {
+  background-color: rgb(225, 250, 250) !important;
+  display: block;
+  width: 130px !important;
+  top: 68.1376px !important;
+  height: 203.351px;
+  opacity: 1;
+  /* transform: scaleX(1) scaleY(1); */
+}
+/* ===================Fim do css do botão==================== */
 
 /* Footer */
 #footer ul li img {
@@ -29,7 +73,7 @@
   color: rgb(73, 114, 146) !important;
 }
 
-#imagem-footer{
+#imagem-footer {
   padding: 70px;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -37,23 +81,216 @@
   background-position-y: -10px;
 }
 
-#imagem-footer:hover .texto{
-  opacity:1;
-  transition: ease 1s ;
+#imagem-footer:hover .texto {
+  opacity: 1;
+  transition: ease 1s;
 }
 
-.texto{
-padding: 20px;
-  text-align:center;
-  opacity:0;
-  transition: opacity .2s linear;
-  background-color:rgba(0, 0, 0, 0.7);
+.texto {
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }
 
-.texto a{
-  font-family:'arial';
+.texto a {
+  font-family: "arial";
   text-decoration: none;
   color: white;
   font-size: 15pt;
 }
+
+/* ================================INICIO Da PAGINA PACOTES================================ */
+main {
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+h1 {
+  text-align: center;
+  font-size: 3.2rem !important;
+  line-height: 100% !important;
+  margin: 3.8rem 0 1.68rem 0 !important;
+  font-size: 16pt;
+  color: #00abe5;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+.ouro {
+  color: #f3d320;
+}
+div p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16pt;
+}
+.atencao {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "AvertaLight", "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: #00abe5;
+  font-size: 17pt;
+}
+
+.pre {
+  margin: -6px 0 -14px 0;
+  margin-left: 12px;
+  margin-right: 15%;
+  color: #00abe5;
+  font-size: 17pt;
+}
+
+.pretexto {
+  font-weight: 400;
+  line-height: 1;
+  color: #777;
+}
+div h3 {
+  font-size: 20px;
+  color: #00abe5;
+  margin-left: 10px;
+  font-family: sans-serif;
+}
+/* inicio de turma */
+element.style {
+  background-color: #eee;
+  margin: 0px;
+  margin-top: 10px !important;
+}
+
+/* Botão */
+.btn {
+  margin: 70px !important;
+  background-color: #00abe5 !important;
+  margin-right: -190px !important;
+  border-radius: 37px !important;
+}
+/* Inicio do footer */
+/* Bloco pricipal */
+body {
+  /* border: 3px solid rgb(47, 0, 255) !important; */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h5.white-text {
+  line-height: 20%;
+  font-size: 14pt !important;
+  color: #00abe5 !important;
+}
+.page-footer {
+  padding-top: 50px !important;
+  color: rgb(14, 12, 12) !important;
+  background-color: #eee !important;
+  margin-bottom: 20px;
+  margin: -42px 0 8px 0;
+}
+a.grey-text.text-lighten-3 {
+  font-size: 12pt;
+  /* font-family: "AvertaRegular", "Trebuchet MS", sans-serif; */
+  color: #777 !important;
+}
+/* Larguta da bloco */
+.row {
+  margin-top: -50px !important;
+}
+.container {
+  margin: -17px auto !important;
+  width: 100% !important;
+}
+.row .col.l6 {
+  width: 25% !important;
+}
+/* termino do footer */
+
+/* =================Tabela====================== */
+/* Css da tabala largura */
+td,
+th {
+  padding: 9px 30px !important;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+
+  /* border-collapse: collapse !important; */
+  padding: 5px !important;
+  line-height: 1.42857143;
+}
+/* css da lina da tabela */
+.table-bordered > tbody > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #ddd;
+}
+/* Cor da liasta da tabela */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #ece9e9;
+}
+/* ==================Fim do css da tabela================================= */
+/* css da caraga  */
+.curso {
+  /* border: 3px solid rgb(47, 0, 255); */
+  display: flex;
+}
+
+/* =======================================FIM DE UMA PÀGINA=============================== */
+
+/* ================================INICIO Da PAGINA PACOTES=============================== */
+/* Inicio do css da pagina 2 */
+/* css da imagem */
+.painel {
+  width: 334px;
+  left: 350px;
+  display: block;
+  display: inline-block;
+
+  text-align: center;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+/* Formatação da imagem */
+.cs-box {
+  text-align: center;
+  bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  /* border: 3px solid rgb(47, 0, 255) ; */
+}
+/* fim do css da imagem */
+
+/* css do texto  */
+.text-editor {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: -2px;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+/* Inicio do bloco data */
+/* calendario do pacote */
+.csbox {
+  margin-top: -2px;
+  line-height: 0.5;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+/* Inicio do nome vermelho */
+.cssbox {
+  margin-top: -2px;
+  line-height: 1.5;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+/* Fim do bloco data */
+
+/* bloco do texto */
+div p {
+  margin-left: 10px !important;
+  margin-right: 10px;
+  font-size: 14pt;
+}
+/* Deixa a litra negrita  */
+strong {
+  font-weight: 700 !important;
+}
+/* fim Deixa a litra negrita  */
+/* =================================FIM DE UMA PÀGINA====================================== */

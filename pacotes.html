@@ -49,7 +49,22 @@
                 <li class="tab"><a href="index.html">HOME</a></li>
                 <li class="tab"><a href="galeria.html">GALERIA</a></li>
                 <li class="tab"><a href="instrutores.html">INSTRUTORES</a></li>
-                <li class="tab"><a href="pacotes.html">PACOTES</a></li>
+                <li class="tab"><a href="turmas.html">TURMAS</a></li>
+                <li class="dropdown">
+                  <ul class="right hide-on-med-and-down">
+                  <a class="dropdown-trigger" href="#!" data-target="dropdown1">PACOTES<i class="material-icons right">arrow_drop_down</i></a>
+                </ul>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="pacoteouro.html">PACOTE OURO</a></li>
+                  <li class="divider"></li>
+                  <li><a href="Pacotebronze.html">PACOTE BRONZE</a></li>
+                  <li class="divider"></li>
+                  <li><a href="pacoteprata.html">PACOTE PRATA</a></li>
+                  <li class="divider"></li>
+                  <li><a href="pacotebleck.html">PACOTE BLECK</a></li>
+                 </ul>
+              </li>
                 <li class="tab"><a href="sobre.html">SOBRE NÓS</a></li>
                 <li class="tab"><a href="contato.html">CONTATO</a></li>
                </ul>
@@ -60,6 +75,7 @@
           <li><a href="index.html">HOME</a></li>
           <li><a href="galeria.html">GALERIA</a></li>
           <li><a  href="instrutores.html">INSTRUTORES</a></li>
+          <li><a href="galeria.html">TURMAS</a></li>
           <li><a  href="pacotes.html">PACOTES</a></li>
           <li><a href="sobre.html">SOBRE NÓS</a></li>
           <li><a href="contato.html">CONTATO</a></li>
@@ -68,10 +84,18 @@
 
     </header>
 </div>
-    <main>
-        <!-- APAGAR ESSA LINHA -->
-        <div id="espaco" style="padding:600px;"></div>
-    </main>
+
+
+<main>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+ 
+    
+</main>
 
       <footer class="page-footer blue-grey darken-4">
         <div style="padding-top:70px;"></div>
@@ -142,6 +166,7 @@
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
+        $(".dropdown-trigger").dropdown();
       });
     </script>
   </body>
