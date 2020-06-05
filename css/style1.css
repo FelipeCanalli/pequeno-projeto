@@ -190,7 +190,8 @@ nav i.material-icons {
 }
 
 /* =======================Pacotes======================= */
-.ouro {
+.metais {
+  padding-top: 120px;
   color: #f3d320;
 }
 div p {
@@ -270,9 +271,7 @@ a.grey-text.text-lighten-3 {
   width: 25% !important;
 }
 
-/* termino do footer */
-
-/* =================Tabela====================== */
+/* =======================Tabela======================= */
 td,
 th {
   padding: 9px 30px !important;
@@ -282,25 +281,24 @@ th {
   padding: 5px !important;
   line-height: 1.42857143;
 }
-/* css da lina da tabela */
+
+/* css da linha da tabela */
 .table-bordered > tbody > tr > td,
 .table-bordered > thead > tr > th {
   border: 1px solid #ddd;
 }
 
-/* Cor da liasta da tabela */
+/* Cor da lista da tabela */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #ece9e9;
 }
-/* ==================Fim do css da tabela================================= */
-/* css da caraga  */
+
+/* css da carga  */
 .curso {
   display: flex;
 }
 
-/* =======================================FIM DE UMA PÁGINA=============================== */
-
-/* ================================INICIO Da PÁGINA PACOTES=============================== */
+/* ================================PACOTES=============================== */
 /* Inicio do css da página 2 */
 /* css da imagem */
 .painel {
@@ -318,8 +316,6 @@ th {
   margin-left: 0px;
   margin-right: 0px;
 }
-
-/* fim do css da imagem */
 
 /* css do texto  */
 .text-editor {
@@ -340,7 +336,6 @@ th {
   margin-top: -2px;
   line-height: 1.5;
 }
-/* Fim do bloco data */
 
 /* bloco do texto */
 div p {
