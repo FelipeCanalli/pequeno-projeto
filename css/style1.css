@@ -1,16 +1,150 @@
-/* Header */
+@media only screen and (max-width: 400px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mobile {
+    display: inline !important;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .desktop-hide {
+    display: none !important;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem !important;
+  line-height: 100% !important;
+  margin: 3.8rem 0 1.68rem 0 !important;
+  font-size: 16pt;
+  color: #00abe5;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* =======================Header======================= */
 .nav-extended {
   z-index: 1;
   position: fixed;
 }
 
-.espaco{
-padding-top:100px;
+/* =======================Main======================= */
+main {
+  margin: 0% 10% 0px 10%;
 }
 
-#teste {
-  margin: 100px;
+/* =======================Footer======================= */
+#footer ul li img {
+  width: 100px;
+  height: 100px;
 }
+#contato-footer li {
+  padding: 10px 0px !important ;
+}
+#contato-footer li i {
+  margin-right: 10px !important ;
+}
+#links-footer ul li {
+  padding-bottom: 10px;
+}
+#links-footer ul li a:hover {
+  transition: ease 0.4s;
+  color: rgb(73, 114, 146) !important;
+}
+#imagem-footer {
+  padding: 70px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: -10px;
+}
+#imagem-footer:hover .texto {
+  opacity: 1;
+  transition: ease 1s;
+}
+.texto {
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+.texto a {
+  font-family: "arial";
+  text-decoration: none;
+  color: white;
+  font-size: 15pt;
+}
+
+/* =======================Index======================= */
+#index {
+  width: 100%;
+  padding: 20px 0px 100px 0px;
+}
+#index h2 {
+  color: #00abe5;
+}
+#caixa1 {
+  display: flex;
+}
+#texto1 {
+  width: 780px;
+  text-align: justify;
+}
+#caixa2 {
+  padding-left: 100px;
+}
+#caixa2 img {
+  width: 82%;
+  padding-bottom: 100px;
+}
+#mergulhador {
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 511px;
+}
+
+/* =======================Index-Sanfona======================= */
+#sanfona {
+  display: flex;
+  padding-bottom: 100px;
+}
+ul.collapsible {
+  width: 400px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+div.collapsible-header:hover {
+  font-weight: bold;
+}
+#foto1 {
+  margin-left: 10px;
+  width: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.material-icons img {
+  width: 40px;
+}
+.collapsible {
+  width: 300px;
+}
+.collapsible-header {
+  padding-bottom: 20px;
+}
+#texto2 {
+  text-align: justify;
+}
+
 /* ======================= */
 nav i,
 nav [class^="mdi-"],
@@ -24,7 +158,8 @@ nav i.material-icons {
   margin-left: 0px !important;
   margin-right: -20px !important;
 }
-/* ==============Inicio do css do botão do pacote ============ */
+
+/* ==============button-pacotes============ */
 .dropdown-content li {
   clear: both;
   color: rgba(0, 0, 0, 0.87);
@@ -34,9 +169,8 @@ nav i.material-icons {
   width: 100%;
   text-align: left;
   color: #ebb201 !important;
-
-  /* border: 3px solid rgb(47, 0, 255); */
 }
+
 /* bloco de letra do botão */
 .dropdown-content li a {
   text-align: center;
@@ -44,6 +178,7 @@ nav i.material-icons {
   font-size: 12px !important;
   color: #ebb201 !important;
 }
+
 /* bloco do botão */
 .dropdown-content {
   background-color: rgb(225, 250, 250) !important;
@@ -52,77 +187,9 @@ nav i.material-icons {
   top: 68.1376px !important;
   height: 203.351px;
   opacity: 1;
-  /* transform: scaleX(1) scaleY(1); */
-}
-/* ===================Fim do css do botão==================== */
-
-/* Footer */
-#footer ul li img {
-  width: 100px;
-  height: 100px;
 }
 
-#contato-footer li {
-  padding: 10px 0px !important ;
-}
-#contato-footer li i {
-  margin-right: 10px !important ;
-}
-
-#links-footer ul li {
-  padding-bottom: 10px;
-}
-
-#links-footer ul li a:hover {
-  transition: ease 0.4s;
-  color: rgb(73, 114, 146) !important;
-}
-
-#imagem-footer {
-  padding: 70px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: -10px;
-}
-
-#imagem-footer:hover .texto {
-  opacity: 1;
-  transition: ease 1s;
-}
-
-.texto {
-  padding: 20px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-}
-
-.texto a {
-  font-family: "arial";
-  text-decoration: none;
-  color: white;
-  font-size: 15pt;
-}
-
-/* ================================INICIO Da PAGINA PACOTES================================ */
-main {
-  margin-top: 100px;
-  margin-left: 5%;
-  margin-right: 5%;
-  /* border: 3px solid rgb(47, 0, 255); */
-}
-h1 {
-  text-align: center;
-  font-size: 3.2rem !important;
-  line-height: 100% !important;
-  margin: 3.8rem 0 1.68rem 0 !important;
-  font-size: 16pt;
-  color: #00abe5;
-  /* border: 3px solid rgb(47, 0, 255); */
-}
+/* =======================Pacotes======================= */
 .ouro {
   color: #f3d320;
 }
@@ -139,7 +206,6 @@ div p {
   color: #00abe5;
   font-size: 17pt;
 }
-
 .pre {
   margin: -6px 0 -14px 0;
   margin-left: 12px;
@@ -147,7 +213,6 @@ div p {
   color: #00abe5;
   font-size: 17pt;
 }
-
 .pretexto {
   font-weight: 400;
   line-height: 1;
@@ -159,7 +224,8 @@ div h3 {
   margin-left: 10px;
   font-family: sans-serif;
 }
-/* inicio de turma */
+
+/* =======================Turmas======================= */
 element.style {
   background-color: #eee;
   margin: 0px;
@@ -173,15 +239,8 @@ element.style {
   margin-right: -190px !important;
   border-radius: 37px !important;
 }
-/* Inicio do footer */
-/* Bloco pricipal */
-body {
-  /* border: 3px solid rgb(47, 0, 255) !important; */
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
 
+/* Bloco pricipal */
 h5.white-text {
   line-height: 20%;
   font-size: 14pt !important;
@@ -196,10 +255,10 @@ h5.white-text {
 }
 a.grey-text.text-lighten-3 {
   font-size: 12pt;
-  /* font-family: "AvertaRegular", "Trebuchet MS", sans-serif; */
   color: #777 !important;
 }
-/* Larguta da bloco */
+
+/* Largura do bloco */
 .row {
   margin-top: -50px !important;
 }
@@ -210,18 +269,16 @@ a.grey-text.text-lighten-3 {
 .row .col.l6 {
   width: 25% !important;
 }
+
 /* termino do footer */
 
 /* =================Tabela====================== */
-/* Css da tabala largura */
 td,
 th {
   padding: 9px 30px !important;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
-
-  /* border-collapse: collapse !important; */
   padding: 5px !important;
   line-height: 1.42857143;
 }
@@ -230,6 +287,7 @@ th {
 .table-bordered > thead > tr > th {
   border: 1px solid #ddd;
 }
+
 /* Cor da liasta da tabela */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #ece9e9;
@@ -237,7 +295,6 @@ th {
 /* ==================Fim do css da tabela================================= */
 /* css da caraga  */
 .curso {
-  /* border: 3px solid rgb(47, 0, 255); */
   display: flex;
 }
 
@@ -251,18 +308,17 @@ th {
   left: 350px;
   display: block;
   display: inline-block;
-
   text-align: center;
-  /* border: 3px solid rgb(47, 0, 255); */
 }
+
 /* Formatação da imagem */
 .cs-box {
   text-align: center;
   bottom: 10px;
   margin-left: 0px;
   margin-right: 0px;
-  /* border: 3px solid rgb(47, 0, 255) ; */
 }
+
 /* fim do css da imagem */
 
 /* css do texto  */
@@ -270,20 +326,19 @@ th {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: -2px;
-  /* border: 3px solid rgb(47, 0, 255); */
 }
+
 /* Inicio do bloco data */
 /* calendario do pacote */
 .csbox {
   margin-top: -2px;
   line-height: 0.5;
-  /* border: 3px solid rgb(47, 0, 255); */
 }
+
 /* Inicio do nome vermelho */
 .cssbox {
   margin-top: -2px;
   line-height: 1.5;
-  /* border: 3px solid rgb(47, 0, 255); */
 }
 /* Fim do bloco data */
 
@@ -293,9 +348,6 @@ div p {
   margin-right: 10px;
   font-size: 14pt;
 }
-/* Deixa a litra negrita  */
 strong {
   font-weight: 700 !important;
 }
-/* fim Deixa a litra negrita  */
-/* =================================FIM DE UMA PÀGINA====================================== */
