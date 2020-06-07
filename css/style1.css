@@ -83,6 +83,9 @@ main {
   color: white;
   font-size: 15pt;
 }
+.footer-copyright {
+  width: 100% !important;
+}
 
 /* =======================Index======================= */
 #index {
@@ -219,6 +222,12 @@ div p {
   color: #00abe5;
   font-size: 17pt;
 }
+.textRodpe {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #000405;
+  font-size: 17pt;
+}
 .pre {
   margin: -6px 0 -14px 0;
   margin-left: 12px;
@@ -232,8 +241,8 @@ div p {
   color: #777;
 }
 div h3 {
-  font-size: 20px;
-  color: #00abe5;
+  font-size: 32px;
+  color: #ebb201;
   margin-left: 10px;
   font-family: sans-serif;
 }
@@ -308,7 +317,7 @@ th {
   display: flex;
 }
 
-/* ================================PACOTES=============================== */
+/* ================================Pacotes=============================== */
 /* Inicio do css da página 2 */
 /* css da imagem */
 .painel {
@@ -357,15 +366,33 @@ th {
 
 /* ================================Conteúdo=============================== */
 .row {
+  font-size: 14pt;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -20px !important;
 }
 .container4 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  text-align: left;
+  padding: 0px 1.75rem !important;
   bottom: 30px;
   margin-top: 50px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.bloco {
+  margin-top: 30px;
+  text-align: center;
+}
+iframe {
+  width: 304px;
+  height: 78px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
 }
 .formulario {
   color: #00abe5;
@@ -401,7 +428,7 @@ select {
   text-align: center;
   font-size: 15px;
   font-style: italic;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   color: rgb(231, 0, 76);
   margin-left: 30px;
   margin-right: 30px;
@@ -420,18 +447,19 @@ label {
 }
 .input {
   position: relative;
-  margin-top: 1rem;
+  margin-top: -2rem;
+  padding: 0px 1.75rem !important;
 }
 
-/* ===============================Bloco de caixa de dados=============================== */
+/* ===============================Caixa de Dados=============================== */
 input[type="text"]:not(.browser-default),
+input[type="date"]:not(.browser-default),
 input[type="email"]:not(.browser-default),
 input[type="tel"]:not(.browser-default) {
   border-radius: 8px !important;
-  width: 60% !important;
+  width: 80% !important;
+  background-color: #ffffff !important;
 }
-
-/* ===============================fim Bloco de caixa de dados=============================== */
 .sabendo {
   font-size: 13pt;
   margin-top: -7px;
@@ -446,7 +474,7 @@ input[type="tel"]:not(.browser-default) {
   width: 250px !important;
   margin-left: 30px;
   height: 37px !important;
-  padding: 0 30px !important;
+  padding: 0 15px !important;
   color: #555;
   border: 2px solid #ccc !important;
 }
