@@ -34,6 +34,9 @@ body {
   z-index: 1;
   position: fixed;
 }
+header {
+  margin-bottom: 120px;
+}
 
 /* =======================Main======================= */
 main {
@@ -206,7 +209,6 @@ nav i.material-icons {
 
 /* =======================Pacotes======================= */
 .metais {
-  padding-top: 120px;
   color: #f3d320;
 }
 div p {
@@ -554,4 +556,30 @@ input[type="tel"]:not(.browser-default) {
 }
 .loading:not(:required) {
   color: transparent;
+}
+
+/* ================================Galeria=============================== */
+#galeria {
+  width: auto;
+  margin: 2% 0% 2% 0%;
+  display: block;
+  text-align: center;
+}
+#linha1 {
+  width: auto;
+  display: inline-flex;
+}
+#foto {
+  width: 100%;
+  padding: 10px;
+}
+#foto img {
+  border: ridge 10px rgb(78, 78, 78);
+  box-shadow: 1px 1px 20px #0001356c;
+  width: 100%;
+}
+.title-galeria {
+  color: #00abe5;
+  text-align: left;
+  padding-top: 4.5%;
 }
