@@ -261,7 +261,7 @@ div p {
   color: #777;
 }
 div h3 {
-  font-size: 32px;
+  font-size: 25px;
   color: #ebb201;
   margin-left: 10px;
   font-family: sans-serif;
@@ -585,3 +585,124 @@ input[type="tel"]:not(.browser-default) {
 .loading:not(:required) {
   color: transparent;
 }
+
+/* ================================Galeria=============================== */
+
+#galeria {
+  width: auto;
+  margin: 2% 0% 2% 0%;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#linha1 {
+  width: auto;
+  display: inline-flex;
+}
+#foto {
+  width: 100%;
+  padding: 10px;
+}
+#foto img {
+  border: ridge 10px rgb(78, 78, 78);
+  box-shadow: 1px 1px 20px #0001356c;
+  width: 100%;
+}
+.title-galeria {
+  color: #00abe5;
+  text-align: left;
+  padding-top: 10.5%;
+}
+
+/* ======================Inicio do css da página Instrutores============================ */
+
+/* ========================texto================= */
+
+/* Caixa do instruto */
+.page-foot {
+  margin-top: 20px;
+}
+.box-with-shadow {
+  margin-bottom: 70px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 #bababa;
+}
+
+.painelimg {
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+/* Bloco do instruto */
+.bloInst {
+  box-shadow: 0 0 5px 0 #bababa;
+  /* width: -200px !important; */
+  text-align: center;
+  margin-right: -77;
+  margin-left: -19px;
+  margin-bottom: 30px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+/* Contane do intruto */
+.containerinst {
+  width: 85% !important;
+}
+
+/* textodo intrutor */
+.inst-text {
+  margin-left: 3px;
+  margin-right: -68px;
+  font-size: 12pt;
+  font-weight: 750;
+}
+.span-text {
+  margin-left: -11px;
+  margin-right: -69px;
+  font-size: 12pt;
+  font-weight: 500;
+}
+/* Nome dos Instrutores */
+h5.white-textinst {
+  line-height: 20%;
+  font-weight: 750;
+  text-align: center;
+  font-size: 16pt !important;
+  color: #fac730 !important;
+}
+
+/* =======================Fim da página Instrutor================================*/
+
+/*========================== Inicio do css do Sobre======================== */
+
+.textsob {
+  margin-top: -85px;
+  margin-bottom: 40px;
+  margin-bottom: 70px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 #bababa;
+}
+
+.textsobr {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.valoresomos {
+  margin-top: 30px;
+  font-size: 14pt !important;
+}
+.valores {
+  font-size: 14pt !important;
+}
+#Acossiado img {
+  width: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+#Acossiado {
+  width: 100%;
+  padding: 10px;
+}
+/* ============Fim do css do Sobre nós================== */
