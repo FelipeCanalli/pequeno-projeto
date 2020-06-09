@@ -96,9 +96,87 @@
       </div>
     </header>
 
-    <main>
-      <!-- APAGAR ESSA LINHA -->
-      <div class="espaco"></div>
+    <main style="margin-bottom: 100px;">
+      <h1>Contato</h1>
+      <hr />
+      <div class="row">
+        <form id="formulario" action="confirmacao.html">
+          <div class="col s12">
+            <label for="first_name">Nome*</label>
+            <input
+              name="nome"
+              type="text"
+              placeholder="Nome completo"
+              maxlength="100"
+              class="form-control"
+              id="contact_name"
+              required
+            />
+          </div>
+
+          <div class="col s4">
+            <label>E-mail*</label>
+            <input
+              placeholder="email@dominio.com.br"
+              type="email"
+              maxlength="100"
+              class="form-control"
+              name="email"
+              id="contact_email"
+              required
+            />
+          </div>
+
+          <div class="col s4">
+            <label>Telefone</label>
+            <input
+              type="tel"
+              maxlength="12"
+              class="form-control"
+              name="Telefone"
+              id="contact_tel"
+              required
+            />
+          </div>
+
+          <div class="col s4">
+            <label>Sexo</label>
+            <p>
+              <label>
+                <input name="group1" type="radio" />
+                <span>Homem</span>
+              </label>
+
+              <label>
+                <input name="group1" type="radio" />
+                <span>Mulher</span>
+              </label>
+
+              <label>
+                <input name="group1" type="radio" />
+                <span>Outros</span>
+              </label>
+            </p>
+          </div>
+
+          <div class="col s12">
+            <label>Mensagem</label>
+            <textarea name="Mensagem" required></textarea>
+          </div>
+
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span
+                >Desejo receber mensagens e notícias sobre promoções e eventos
+                em meu e-mail e telefone</span
+              >
+            </label>
+          </p>
+          <button class="btn" input type="submit" value="Enviar">Enviar</button>
+
+        </form>
+      </div>
     </main>
 
     <footer class="page-footer blue-grey darken-4">

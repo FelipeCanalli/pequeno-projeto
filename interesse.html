@@ -101,8 +101,6 @@
       <section class="page-title">
         <div class="container3">
           <h1>Registre seu Interesse</h1>
-
-          <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR"></script>
         </div>
       </section>
       <div>
@@ -113,65 +111,52 @@
         </p>
       </div>
       <br />
-      <footer class="page-footer">
+      <div class="interesse">
         <div class="container">
-          <div class="bloc">
-            <!-- ========Fim do Primeiro bloco de dados======1===== -->
+          <div class="bloco">
+            <!-- ========Inicio do Primeiro bloco de dados======1===== -->
             <div class="row">
-              <form class="col s12">
-                <div class="ruw">
+              <form id="formulario" action="confirmacao.html">
+                <div class="col s12">
                   <div class="input-field col s6">
                     <label for="first_name">Nome*</label>
                     <input
                       placeholder="Nome completo"
                       type="text"
-                      value=""
-                      data-msg-required="Por favor entre com o seu nome"
                       maxlength="100"
                       class="form-control"
                       name="nome"
                       id="contact_name"
+                      required
                     />
                   </div>
                   <div class="input-field col s6">
                     <label>E-mail*</label>
                     <input
                       placeholder="exemplo@dominio.com.br"
-                      type="tel"
-                      value=""
-                      onkeydown="Mascara(this,Data);"
-                      onkeypress="Mascara(this,Data);"
-                      onkeyup="Mascara(this,Data);"
-                      onblur="fctValidaData(this);"
-                      data-msg-required="Telefone"
+                      type="email"
                       maxlength="100"
                       class="form-control"
-                      name="data_nascimento"
-                      id="contact_data"
+                      name="email"
+                      id="contact_email"
+                      required
                     />
                   </div>
                 </div>
-              </form>
-            </div>
-            <!-- ==========Inicio do segundo bloco de dados====2==== -->
-            <div class="row">
-              <form class="col s12">
-                <div class="ruw">
+
+                <!-- ==========Inicio do segundo bloco de dados====2==== -->
+
+                <div class="col s12">
                   <div class="input-field col s6">
                     <label>CPF*</label>
                     <input
                       placeholder="xxx.xxx.xxx-xx"
                       type="tel"
-                      value=""
-                      onkeydown="Mascara(this,Cpf);"
-                      onkeypress="Mascara(this,Cpf);"
-                      onkeyup="Mascara(this,Cpf);"
-                      onblur="TestaCPF(this.value);"
-                      data-msg-required="Telefone"
                       maxlength="14"
                       class="form-control"
                       name="cpf"
                       id="contact_cpf"
+                      required
                     />
                   </div>
                   <div class="input-field col s6">
@@ -179,41 +164,30 @@
                     <input
                       placeholder=""
                       type="date"
-                      value=""
-                      onkeydown="Mascara(this,Data);"
-                      onkeypress="Mascara(this,Data);"
-                      onkeyup="Mascara(this,Data);"
-                      onblur="fctValidaData(this);"
-                      data-msg-required="Telefone"
                       maxlength="10"
                       class="form-control"
                       name="data_nascimento"
                       id="contact_data"
+                      required
                     />
                   </div>
                 </div>
-              </form>
-            </div>
-            <!-- ========Fim do segundo bloco de dados======2===== -->
-            <br />
-            <!-- ==========Inicio do terceiro bloco de dados====3==== -->
-            <div class="row">
-              <form class="col s12">
-                <div class="ruw">
+
+                <!-- ========Fim do segundo bloco de dados======2===== -->
+                <br />
+                <!-- ==========Inicio do terceiro bloco de dados====3==== -->
+                <div class="col s12">
                   <div class="input-field col s6">
                     <label>Celular*</label>
                     <input
                       placeholder=""
                       type="tel"
-                      value=""
-                      onkeydown="Mascara(this,Telefone);"
-                      onkeypress="Mascara(this,Telefone);"
-                      onkeyup="Mascara(this,Telefone);"
                       data-msg-required="Telefone"
                       maxlength="15"
                       class="form-control"
                       name="celular"
-                      id="contact_subject"
+                      id="contact_celular"
+                      required
                     />
                   </div>
                   <div class="input-field col s6">
@@ -221,41 +195,27 @@
                     <input
                       placeholder=""
                       type="tel"
-                      value=""
-                      onkeydown="Mascara(this,Telefone);"
-                      onkeypress="Mascara(this,Telefone);"
-                      onkeyup="Mascara(this,Telefone);"
-                      data-msg-required="Telefone"
                       maxlength="14"
                       class="form-control"
                       name="telefone_residencial"
-                      id="contact_subject"
+                      id="contact_residencial"
                     />
                   </div>
                 </div>
-              </form>
-            </div>
-            <!-- ========Fim do terceiro bloco de dados======3===== -->
+                <!-- ========Fim do terceiro bloco de dados======3===== -->
 
-            <!-- ==========Inicio do quarto bloco de dados====4==== -->
-            <br />
-            <div class="row">
-              <form class="col s12">
-                <div class="ruw">
+                <!-- ==========Inicio do quarto bloco de dados====4==== -->
+                <br />
+                <div class="col s12">
                   <div class="input-field col s6">
                     <label>Telefone Comercial</label>
                     <input
                       placeholder=""
                       type="tel"
-                      value=""
-                      onkeydown="Mascara(this,Telefone);"
-                      onkeypress="Mascara(this,Telefone);"
-                      onkeyup="Mascara(this,Telefone);"
-                      data-msg-required="Telefone"
                       maxlength="14"
                       class="form-control"
                       name="telefone_comercial"
-                      id="contact_subject"
+                      id="contact_comercial"
                     />
                   </div>
                   <div class="input-field col s6">
@@ -265,192 +225,142 @@
                       type="tel"
                       class="form-control"
                       name="ramal"
-                      id="contact_subject"
+                      id="contact_ramal"
                     />
                   </div>
+
+                  <br />
                 </div>
-                <br />
+                <!-- ========Fim do quarto bloco de dados======4===== -->
+
+                <div>
+                  <div class="input-field col s6">
+                    <label class="sabendo">Escolha Seu Pacote?:*</label>
+                    <br />
+                    <br />
+
+                    <select
+                      value=""
+                      class="form-control"
+                      name="pacote"
+                      id="contact_pacote"
+                    >
+                      <ul>
+                        <option value="">Selecione</option>
+                        <option value="1">PACOTE BRONZE</option>
+                        <option value="2">PACOTE PRATA</option>
+                        <option value="3">PACOTE OURO</option>
+                        <option value="4">PACOTE BLACK</option>
+                      </ul>
+                    </select>
+                  </div>
+
+                  <!--============ Inicio do botão 2========== -->
+                  <div>
+                    <div class="input-field col s6">
+                      <label class="sabendo">Como ficou sabendo?:*</label>
+                      <br />
+                      <br />
+
+                      <select
+                        value=""
+                        data-msg-required="Por favor entre com o seu nome"
+                        maxlength="100"
+                        class="form-control"
+                        name="nome"
+                        id="contact_redes"
+                      >
+                        <option value="">Selecione</option>
+                        <option value="1">Redes sociais</option>
+                        <option value="2">Busca na internet</option>
+                        <option value="3">Email</option>
+                        <option value="4">SMS</option>
+                        <option value="5">WhatsApp</option>
+                        <option value="6">Jornal</option>
+                        <option value="7">Revista</option>
+                        <option value="8">Indicação</option>
+                        <option value="9">Na unidade do MERGULHO</option>
+                        <option value="10"
+                          >Evento de orientação profissional</option
+                        >
+                        <option value="11">Busca no site do MERGULHO</option>
+                        <option value="12">Sou aluno / ex-aluno</option>
+                        <option value="13">Comercial na TV</option>
+                        <option value="14">Empresa me inscreveu</option>
+                        <option value="18"
+                          >Indicação (amigos, família, etc)</option
+                        >
+                        <option value="26">Rádio</option>
+                      </select>
+                    </div>
+                    <!-- =============fim do botão 2============ -->
+                  </div>
+                  <br />
+
+                  <br />
+
+                  <div class="col-md-12 margin-top40">
+                    <!-- ======Não sou um Robo============= -->
+                    <div
+                      id="captcha"
+                      name="captcha"
+                      class="g-recaptcha"
+                      data-sitekey="6LcPCCgUAAAAAM5MOORp9gQSpp5GhxbW3wyZn43x"
+                    >
+                      <div style="width: 304px; height: 78px;">
+                        <div>
+                          <iframe
+                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcPCCgUAAAAAM5MOORp9gQSpp5GhxbW3wyZn43x&amp;co=aHR0cHM6Ly9maXJqYW5zZW5haS5jb20uYnI6NDQz&amp;hl=pt-BR&amp;v=HYx6hBAtwYatsD8qzq7tXNTk&amp;size=normal&amp;cb=k3lg75j8wudg"
+                            width="304"
+                            height="78"
+                            role="presentation"
+                            name="a-lcnwnin2jqc9"
+                            frameborder="0"
+                            scrolling="no"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                          >
+                          </iframe>
+                        </div>
+                        <textarea
+                          id="g-recaptcha-response"
+                          name="g-recaptcha-response"
+                          class="g-recaptcha-response"
+                          style="
+                            width: 250px;
+                            height: 40px;
+                            border: 1px solid rgb(193, 193, 193);
+                            margin: 10px 25px;
+                            padding: 0px;
+                            resize: none;
+                            display: none;
+                          "
+                        >
+                        </textarea>
+                      </div>
+                      <iframe style="display: none;"> </iframe>
+                    </div>
+                    <div class="btn-interesse">
+                      <button class="btn" input type="submit" value="Enviar">
+                        Enviar
+                      </button>
+
+                      &nbsp;&nbsp;
+                      <!-- fim do botão de carega -->
+                      <a
+                        href="turmas.html"
+                        rel="nofollow"
+                        class="btn btn-primary"
+                        >VOLTAR</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
-            <!-- ========Fim do quarto bloco de dados======4===== -->
-
-            <div class="ruw">
-              <div class="input-field col s6">
-                <label class="sabendo">Escolha Seu Pacote?:*</label>
-                <br />
-                <br />
-
-                <select
-                  placeholder=""
-                  type="tel"
-                  value=""
-                  data-msg-required="Por favor entre com o seu nome"
-                  maxlength="100"
-                  class="form-control"
-                  name="nome"
-                  id="contact_name"
-                >
-                  <ul>
-                    <option value="">Selecione</option>
-                    <option value="1">PACOTE BRONZE</option>
-                    <option value="2">PACOTE PRATA</option>
-                    <option value="3">PACOTE OURO</option>
-                    <option value="4">PACOTE BLACK</option>
-                  </ul>
-                </select>
-              </div>
-
-              <!--============ Inicio do botão 2========== -->
-              <div class="ruw">
-                <div class="input-field col s6">
-                  <label class="sabendo">Como ficou sabendo?:*</label>
-                  <br />
-                  <br />
-
-                  <select
-                    placeholder=""
-                    type="tel"
-                    value=""
-                    data-msg-required="Por favor entre com o seu nome"
-                    maxlength="100"
-                    class="form-control"
-                    name="nome"
-                    id="contact_name"
-                  >
-                    <option value="">Selecione</option>
-                    <option value="1">Redes sociais</option>
-                    <option value="2">Busca na internet</option>
-                    <option value="3">Email</option>
-                    <option value="4">SMS</option>
-                    <option value="5">WhatsApp</option>
-                    <option value="6">Jornal</option>
-                    <option value="7">Revista</option>
-                    <option value="8">Indicação</option>
-                    <option value="9">Na unidade do MERGULHO</option>
-                    <option value="10"
-                      >Evento de orientação profissional</option
-                    >
-                    <option value="11">Busca no site do MERGULHO</option>
-                    <option value="12">Sou aluno / ex-aluno</option>
-                    <option value="13">Comercial na TV</option>
-                    <option value="14">Empresa me inscreveu</option>
-                    <option value="18">Indicação (amigos, família, etc)</option>
-                    <option value="26">Rádio</option>
-                  </select>
-                </div>
-                <!-- =============fim do botão 2============ -->
-              </div>
-              <br />
-              <!-- ======Não sou um Robo============= -->
-              <div
-                id="captcha"
-                name="captcha"
-                class="g-recaptcha"
-                data-sitekey="6LcPCCgUAAAAAM5MOORp9gQSpp5GhxbW3wyZn43x"
-              >
-                <div style="width: 304px; height: 78px;">
-                  <div>
-                    <iframe
-                      src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcPCCgUAAAAAM5MOORp9gQSpp5GhxbW3wyZn43x&amp;co=aHR0cHM6Ly9maXJqYW5zZW5haS5jb20uYnI6NDQz&amp;hl=pt-BR&amp;v=HYx6hBAtwYatsD8qzq7tXNTk&amp;size=normal&amp;cb=k3lg75j8wudg"
-                      width="304"
-                      height="78"
-                      role="presentation"
-                      name="a-lcnwnin2jqc9"
-                      frameborder="0"
-                      scrolling="no"
-                      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                    >
-                    </iframe>
-                  </div>
-                  <textarea
-                    id="g-recaptcha-response"
-                    name="g-recaptcha-response"
-                    class="g-recaptcha-response"
-                    style="
-                      width: 250px;
-                      height: 40px;
-                      border: 1px solid rgb(193, 193, 193);
-                      margin: 10px 25px;
-                      padding: 0px;
-                      resize: none;
-                      display: none;
-                    "
-                  >
-                  </textarea>
-                </div>
-                <iframe style="display: none;"> </iframe>
-              </div>
-              <br />
-
-              <!-- ==============fim do Robo=============== -->
-              <div class="row">
-                <div class="col-md-12 margin-top40">
-                  <!-- =============para fazer o caregamento================= -->
-                  <script>
-                    function terminou_carregar() {
-                      document.getElementById(
-                        "container_loading"
-                      ).style.display = "none";
-                      document.getElementById(
-                        "container_loading_text"
-                      ).style.display = "none";
-                    }
-                    function carregar() {
-                      document.getElementById(
-                        "container_loading"
-                      ).style.display = "block";
-                      document.getElementById(
-                        "container_loading_text"
-                      ).style.display = "block";
-                    }
-                  </script>
-                  <!-- inicio caregamento do cadastro -->
-                  <div
-                    class="loading"
-                    id="container_loading"
-                    style="display: none;"
-                  >
-                    Loading…
-                  </div>
-                  <div
-                    class="text"
-                    id="container_loading_text"
-                    style="display: none;"
-                  >
-                    <b>
-                      <font size="4" color="black"> Processando...</font>
-                    </b>
-                  </div>
-                  <!-- fim de carregamento do cadastro -->
-                  <!-- Inicio do botão -->
-                  <script>
-                    terminou_carregar();
-                  </script>
-                  <div class="interesse">
-                    <input
-                      type="button"
-                      value="REGISTRAR INTERESSE"
-                      class="btn btn-primary"
-                      id="contact_submit"
-                      onclick="this.disabled=true; carregar(); onclickStatusParaReserva(2727);"
-                    />
-
-                    &nbsp;&nbsp;
-                    <!-- fim do botão de carega -->
-                    <a
-                      href="turmas.html"
-                      rel="nofollow"
-                      class="btn btn-primary"
-                      style="background-color: #0174df;"
-                      >VOLTAR</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- ====================FINAL DA DIV MAIOR row====================== -->
           </div>
         </div>
-      </footer>
+      </div>
       <!-- ========================================== -->
       <div>
         <h2 class="textRodpe">
